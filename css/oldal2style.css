@@ -1,3 +1,15 @@
+body{
+    background-color: lightblue;
+}
+
 p{
     text-indent: 6px;
+}
+
+a{
+    text-decoration: none;
+}
+
+a :hover{
+    background-color: lightblue;
 }

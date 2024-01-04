@@ -38,12 +38,38 @@
     <div class="main">
         <div class="row">
             <div class="col-12 mt-3 ms-3">
-              <h1 class="text-primary">Hogyan mérjük?</h1>
+              <div class="row">
+                <div class="col-md-1">
+                    <ul class="nav bg-dark">
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle fw-bold" id="cimek" data-bs-toggle="dropdown" role="button" aria-expanded="false">Címek</a>
+                        <ul class="dropdown-menu bg-dark">
+                          <li><a class="dropdown-item bg-dark text-white" href="#magassag">Testmagasság</a></li>
+                          <li><a class="dropdown-item bg-dark text-white" href="#tomeg">Testtömeg</a></li>
+                          <li><a class="dropdown-item bg-dark text-white" href="#">Csípőméret</a></li>
+                          <li><a class="dropdown-item bg-dark text-white" href="#">Csuklókerület</a></li>
+                          <li><a class="dropdown-item bg-dark text-white" href="#">Bokakerület</a></li>
+                          <section>
+                          </section>
+                          <li><a class="dropdown-item bg-dark text-white" href="#">Nyújtott felkarkerület</a></li>
+                          <li><a class="dropdown-item bg-dark text-white" href="#">Mellkaskerület</a></li>
+                          <li><a class="dropdown-item bg-dark text-white" href="#">Alkarkerület</a></li>
+                          <li><a class="dropdown-item bg-dark text-white" href="#">Combkerület</a></li>
+                          <li><a class="dropdown-item bg-dark text-white" href="#">Alszárkerület</a></li>
+                          <li><a class="dropdown-item bg-dark text-white" href="#">Vállszelesség</a></li>
+                          <li><a class="dropdown-item bg-dark text-white" href="#">Mellkasszélesség</a></li>
+                          <li><a class="dropdown-item bg-dark text-white" href="#">Csípőszélesség</a></li>
+                          <li><a class="dropdown-item bg-dark text-white" href="#">Mellkasmélység</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                </div>
+              </div>
             </div>
         </div>
         <div class="row">
           <div class="col-md-6 ms-3">
-            <h2 class="text-danger">Testmagasság</h2>
+            <h2 class="text-danger" id="magassag">Testmagasság</h2>
             <p>
               A testmagasságot a függőleges falfelület mellett, azt sarkával, tomporával és hátával érintő,
               álló személyen mérjük. A fejet úgy tartja, hogy a fülnyílás felső határa és a szemzug alsó
@@ -54,7 +80,7 @@
         </div>
         <div class="row">
           <div class="col-md-6 ms-3">
-            <h2 class="text-danger">Testsúly</h2>
+            <h2 class="text-danger" id="tomeg">Testsúly</h2>
             <p>
               A minimális ruházatot viselő személy a mérleg közepére áll.
             </p>
@@ -72,6 +98,7 @@
 
           </div>
         </div>
+        <hr>
         <div class="row">
           <div class="col-md-6 ms-3">
 
@@ -152,6 +179,7 @@
 
           </div>
         </div>
+  </div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
 </body>
