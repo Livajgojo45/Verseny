@@ -4,6 +4,7 @@ body{
 
 p{
     text-indent: 6px;
+    text-align: justify;
 }
 
 a{
@@ -13,3 +14,4 @@ a{
 a :hover{
     background-color: lightblue;
 }
+
