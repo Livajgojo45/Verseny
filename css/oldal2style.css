@@ -1,9 +1,13 @@
 body{
-    background-color: lightblue;
+    background-color: #550000ff;
+    color: white;
+}
+
+.header{
+    font-weight: bold;
 }
 
 p{
-    text-indent: 6px;
     text-align: justify;
 }
 
@@ -12,6 +16,54 @@ a{
 }
 
 a :hover{
-    background-color: lightblue;
+    color: #ffccaa ;
 }
 
+h1, h2, h3, cimek{
+    color: #ffccaa;
+}
+h3{
+    font-size: 24px;
+    text-decoration: underline;
+}
+
+h2{
+    font-weight: bold;
+    font-size: 29px;
+}
+
+#cim{
+    color: #ffccaa;
+}
+
+#tablazat{
+    background-color: #a02c2c;
+    border-radius: 25px;
+    border: 2px solid grey;
+    box-shadow: 8px 8px 3px #ffccaa;
+}
+
+#tabla{
+    color: white;
+}
+
+#kocka{
+    background-color: #a02c2c;
+    border-radius: 25px;
+    box-shadow: 7px 7px 3px #ffccaa;
+}
+
+#szovegek{
+    margin-left: 10px;
+}
+
+.kereses{
+  width: 100px;
+  background-color: #a02c2c;
+  border-radius: 10px;
+  padding-left: 11px;
+}
+
+#ul{
+    background-color: #550000ff;
+}
