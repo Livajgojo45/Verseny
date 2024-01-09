@@ -1,0 +1,41 @@
+body{
+    background-color: #550000ff;
+    color: #ffccaaff;
+    font-weight: bold;
+}
+
+#cim{
+    background-color: #a02c2cff;
+}
+
+.testreszek{
+    background-color: #a02c2cff;
+    width: 190px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+#mezo{
+    width: 600px;
+    border: 2px solid grey;
+    border-radius: 25px;
+    height: 320px;
+    
+}
+
+.mezok{
+    background-color: #ffeeb7ff;
+    width: 600px;
+    border: 2px solid grey;
+    border-radius: 25px;
+    margin: 0 auto 0 auto;
+}
+
+.cursor{
+    cursor: pointer;
+}
+
+#sor1{
+    padding-top: 55px;
+}

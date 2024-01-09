@@ -8,7 +8,7 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 <link rel="stylesheet" href="assets/css/style.css">
-<link rel="stylesheet" href="../Verseny/css/style.css">
+<link rel="stylesheet" href="../Verseny/css/oldal1.css">
 <title>Testösszetétel</title>
 </head>
 <body>
@@ -24,7 +24,7 @@
                         </button>
                         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                             <div class="navbar-nav">
-                            <a class="nav-link" href="főoldal.html">Főoldal</a>
+                            <a class="nav-link" href="index.html">Főoldal</a>
                             <a class="nav-link active" aria-current="page" href="oldal1.html">Számítások</a>
                             <a class="nav-link" href="oldal2.html">Hogyan mérjük?</a>
                             <a class="nav-link" href="oldal3.html">Disabled</a>
@@ -37,7 +37,7 @@
         </div>
         <div class="main">
             <div class="row">
-                <div class="text-center mt-5 mb-5">
+                <div class="text-center pt-5 pb-5 mb-5" id="cim">
                     <h1>Testösszetétel becslése</h1>
                 </div>
             </div>
@@ -45,34 +45,34 @@
                 <div class="col-md-12">
                     <form>
                         <div class="row">
-                            <div class="text-center col-md-6 mx-auto bg-light p-5 mb-5" id="mezo">
-                                <fieldset class="row">
+                            <div class="text-center col-md-6 p-5 mb-5 mezok" id="mezo">
+                                <fieldset class="row" id="sor1">
                                     <div class="col-md-6">
-                                        <label for="testmagassag" class="badge">Testmagasság</label><br>
-                                        <input type="number" id="szam">
+                                        <label for="testmagassag" class="testreszek">Testmagasság</label><br>
+                                        <input type="number" id="magassag">
                                     </div>
                                     <div class="col-md-6">
-                                        <label for="testtomeg" class="badge">Testtömeg</label><br>
-                                        <input type="number" id="szam1">
+                                        <label for="testtomeg" class="testreszek">Testtömeg</label><br>
+                                        <input type="number" id="tomeg">
                                     </div>
                                     <div class="col-md-12">
                                         <p onclick="elso_negyzet()" class="text-center mt-2 text-danger fw-bold cursor">További információ</p>
                                     </div>
                                 </fieldset>
                             </div>
-                            <div class="text-center col-md-6 mx-auto bg-light p-5 mb-5 mezok">
+                            <div class="text-center col-md-6 p-5 mb-5 mezok">
                                 <fieldset class="row">
                                     <div class="col-md-6">
-                                        <label for="konyokszelesseg" class="badge">Könyökszélesség</label><br>
-                                        <input type="number" class="mb-3" id="szam2">
-                                        <label for="terdszelesseg" class="badge">Térdszélesség</label><br>
-                                        <input type="number" id="szam3" >
+                                        <label for="konyokszelesseg" class="testreszek">Könyökszélesség</label><br>
+                                        <input type="number" class="mb-3" id="konyokszelesseg">
+                                        <label for="terdszelesseg" class="testreszek">Térdszélesség</label><br>
+                                        <input type="number" id="terdszelesseg">
                                     </div>
                                     <div class="col-md-6">
-                                        <label for="csuklokerulet" class="badge">Csuklókerület</label><br>
-                                        <input type="number" class="mb-3" id="szam4">
-                                        <label for="bokakerulet" class="badge">Bokakerület</label><br>
-                                        <input type="number" id="szam5">
+                                        <label for="csuklokerulet" class="testreszek">Csuklókerület</label><br>
+                                        <input type="number" class="mb-3" id="csuklokerulet">
+                                        <label for="bokakerulet" class="testreszek">Bokakerület</label><br>
+                                        <input type="number" id="bokakerulet">
                                     </div>
                                     <div>
                                         <p onclick="masodik_negyzet()" class="text-center mt-2 text-danger fw-bold cursor">További információ</p>
@@ -81,24 +81,24 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="text-center col-md-6 mx-auto bg-light p-5 mb-5 mezok">
+                            <div class="text-center col-md-6 p-5 mb-5 mezok">
                                 <fieldset class="row">
                                     <div class="col-md-6 mt-5">
-                                        <label for="tricepszredo" class="badge">Tricepszredő</label><br>
-                                        <input type="number" id="szam6">
-                                        <label for="lapockaredo" class="badge mt-3">Lapockaredő</label><br>
-                                        <input type="number" id="szam7">
+                                        <label for="tricepszredo" class="testreszek">Tricepszredő</label><br>
+                                        <input type="number" id="tricepszredo">
+                                        <label for="lapockaredo" class="testreszek">Lapockaredő</label><br>
+                                        <input type="number" id="lapockaredo">
                                     </div>
                                     <div class="col-md-6 mt-5">
-                                        <label for="combredo" class="badge">Combredő</label><br>
-                                        <input type="number" id="szam8">
-                                        <label for="koldokredo" class="badge mt-3">Köldökredő</label><br>
-                                        <input type="number" id="szam9">
+                                        <label for="combredo" class="testreszek">Combredő</label><br>
+                                        <input type="number" id="combredo">
+                                        <label for="koldokredo" class="testreszek">Köldökredő</label><br>
+                                        <input type="number" id="koldokredo">
                                     </div>
                                     <div class="row">
                                         <div class="m-3">
-                                            <label for="alszarredo" class="badge">Alszárredő</label><br>
-                                            <input type="number" id="szam10">
+                                            <label for="alszarredo" class="testreszek">Alszárredő</label><br>
+                                            <input type="number" id="alszarredo">
                                         </div>
                                     </div>
                                     <div>
@@ -106,35 +106,35 @@
                                     </div>
                                 </fieldset>
                             </div>
-                            <div class="text-center col-md-6 mx-auto bg-light p-5 mb-5 mezok">
+                            <div class="text-center col-md-6 p-5 mb-5 mezok">
                                 <fieldset class="row">
                                     <div class="col-md-6">
-                                        <label for="felkarkerulet" class="badge">Nyújtott felkarkerület</label><br>
-                                        <input type="number" id="szam11"><br>
-                                        <label for="mellkaskerulet" class="badge mt-2">Mellkaskerület</label><br>
-                                        <input type="number" id="szam12"><br>
+                                        <label for="felkarkerulet" class="testreszek">Nyújtott felkarkerület</label><br>
+                                        <input type="number" id="nyujtott_felkarkerulet"><br>
+                                        <label for="mellkaskerulet" class="testreszek">Mellkaskerület</label><br>
+                                        <input type="number" id="mellkaskerulet"><br>
                                     </div>
                                     <div class="col-md-6">
-                                        <label for="alkarkerulet" class="badge">Alkarkerület</label><br>
-                                        <input type="number" id="szam13"><br>
-                                        <label for="combkerulet" class="badge mt-2">Combkerület</label><br>
-                                        <input type="number" id="szam14"><br>
+                                        <label for="alkarkerulet" class="testreszek">Alkarkerület</label><br>
+                                        <input type="number" id="alkarkerulet"><br>
+                                        <label for="combkerulet" class="testreszek">Combkerület</label><br>
+                                        <input type="number" id="combkerulet"><br>
                                     </div>
                                     <div class="col-md-6">
-                                        <label for="alszarkerulet" class="badge mt-2">Alszárkerület</label><br>
-                                        <input type="number" id="szam15"><br>
-                                        <label for="vallszelesseg" class="badge mt-2">Vállszélesség</label><br>
-                                        <input type="number" id="szam16"><br>
+                                        <label for="alszarkerulet" class="testreszek">Alszárkerület</label><br>
+                                        <input type="number" id="alszarkerulet"><br>
+                                        <label for="vallszelesseg" class="testreszek">Vállszélesség</label><br>
+                                        <input type="number" id="vallszelesseg"><br>
                                     </div>
                                     <div class="col-md-6">
-                                        <label for="mellkasszelesseg" class="badge mt-2">Mellkasszélesség</label><br>
-                                        <input type="number" id="szam17"><br>
-                                        <label for="csiposzelesseg" class="badge mt-2">Csípőszélesség</label><br>
-                                        <input type="number" id="szam18"><br>
+                                        <label for="mellkasszelesseg" class="testreszek">Mellkasszélesség</label><br>
+                                        <input type="number" id="mellkasszelesseg"><br>
+                                        <label for="csiposzelesseg" class="testreszek">Csípőszélesség</label><br>
+                                        <input type="number" id="csiposzelesseg"><br>
                                     </div>
                                     <div class="col-md-12">
-                                        <label for="mellkasmelyseg" class="badge mt-2">Mellkasmélység</label><br>
-                                        <input type="number" id="szam19">
+                                        <label for="mellkasmelyseg" class="testreszek">Mellkasmélység</label><br>
+                                        <input type="number" id="mellkasmelyseg">
                                     </div>
                                     <div>
                                         <p onclick="negyedik_negyzet()" class="text-center mt-2 text-danger fw-bold cursor">További információ</p>
@@ -143,7 +143,12 @@
                             </div>
                             <div class="row">
                                 <div class="col-md-12 text-center mb-3">
-                                    <input type="button" value="Számítás" class="btn btn-primary">
+                                    <input type="button" onclick="szamolas()" value="Számítás" class="btn btn-primary">
+                                    <p>Csonttömeg: <span id="csonttomeg_eredmeny"></span></p>
+                                    <p>Zsírtömeg: <span id="zsirtomeg_eredmeny"></span></p>
+                                    <p>Izomtömeg: <span id="izomtomeg_eredmeny"></span></p>
+                                    <p>Zsigertomeg: <span id="zsigertomeg_eredmeny"></span></p>
+                                    <p>Becsült testtömeg: <span id="becsult_testtomeg_eredmeny"></span></p>
                                 </div>
                             </div>
                         </div>
@@ -153,6 +158,7 @@
         </div>
     </div>
 <script src="../Verseny/js/info.js"></script>
+<script src="../Verseny/js/szamitas.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
 </body>
