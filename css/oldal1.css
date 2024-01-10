@@ -39,3 +39,17 @@ body{
 #sor1{
     padding-top: 55px;
 }
+
+.eredmenyek{
+    background-color: #a02c2cff;
+    border-radius: 5px;
+    width: 240px;
+    margin:0 auto 0 auto;
+    padding-top: 10px;
+}
+.btn{
+    background-color: #800000;
+    border: 1px solid #800000;
+    color: #ffbca0;
+    font-weight: bold;
+}
