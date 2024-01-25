@@ -43,7 +43,7 @@ body{
 .eredmenyek{
     background-color: #a02c2cff;
     border-radius: 5px;
-    width: 240px;
+    width: 260px;
     margin:0 auto 0 auto;
     padding-top: 10px;
 }
@@ -52,4 +52,8 @@ body{
     border: 1px solid #800000;
     color: #ffbca0;
     font-weight: bold;
+}
+
+#felkar{
+    width: 225px;
 }
