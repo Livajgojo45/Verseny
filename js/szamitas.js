@@ -1,6 +1,9 @@
 function szamolas() {
-    var testmagassag = document.getElementById("magassag").value;
+    var testmagassag = document.getElementById("testmagassag").value;
     testmagassag = Number(testmagassag);
+
+    var testtomeg = document.getElementById("testtomeg").value;
+    testtomeg = Number(testtomeg);
 
     var konyokszelesseg = document.getElementById("konyokszelesseg").value;
     konyokszelesseg = Number(konyokszelesseg);
@@ -134,9 +137,27 @@ function szamolas() {
     becsult_testtomeg = csonttomeg + zsirtomeg + izomtomeg + zsigertomeg
     becsult_testtomeg = Math.round(becsult_testtomeg*100)/100
 
-    document.getElementById("csonttomeg_eredmeny").innerText=csonttomeg;
-    document.getElementById("zsirtomeg_eredmeny").innerText=zsirtomeg;
-    document.getElementById("izomtomeg_eredmeny").innerText=izomtomeg;
-    document.getElementById("zsigertomeg_eredmeny").innerText=zsigertomeg;
-    document.getElementById("becsult_testtomeg_eredmeny").innerText=becsult_testtomeg;
+
+    var csonttomeg_szazalek = 0;
+    csonttomeg_szazalek = csonttomeg/testtomeg*100
+    csonttomeg_szazalek = Math.round(csonttomeg_szazalek*100)/100
+
+    var zsirtomeg_szazalek = 0;
+    zsirtomeg_szazalek = zsigertomeg/testtomeg*100
+    zsirtomeg_szazalek = Math.round(zsirtomeg_szazalek*100)/100
+
+    var izomtomeg_szazalek = 0;
+    izomtomeg_szazalek = izomtomeg/testtomeg*100
+    izomtomeg_szazalek = Math.round(izomtomeg_szazalek*100)/100
+
+    var zsigertomeg_szazalek = 0;
+    zsigertomeg_szazalek = zsigertomeg/testtomeg*100
+    zsigertomeg_szazalek = Math.round(zsigertomeg_szazalek*100)/100
+
+
+    document.getElementById("csonttomeg_eredmeny").innerText=csonttomeg + "kg, " + csonttomeg_szazalek + "%";
+    document.getElementById("zsirtomeg_eredmeny").innerText=zsirtomeg + "kg, " + zsirtomeg_szazalek + "%";
+    document.getElementById("izomtomeg_eredmeny").innerText=izomtomeg + "kg, " + izomtomeg_szazalek + "%";
+    document.getElementById("zsigertomeg_eredmeny").innerText=zsigertomeg + "kg, " + zsigertomeg_szazalek + "%";
+    document.getElementById("becsult_testtomeg_eredmeny").innerText=becsult_testtomeg + "kg";
 }

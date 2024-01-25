@@ -12,6 +12,7 @@
 <title>Testösszetétel</title>
 </head>
 <body>
+<<<<<<< HEAD
     <div class="container-responsive">
         <div class="header">
             <div class="row">
@@ -31,10 +32,27 @@
                         </div>
                         </div>
                     </nav>
+=======
+    <main class="container-fluid">
+        <header class="row">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark col-md-12">
+                <div class="container-fluid">
+                <a class="navbar-brand" href="#">Navbar</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                    <a class="nav-link" href="index.html">Főoldal</a>
+                    <a class="nav-link active" aria-current="page" href="oldal1.html">Számítások</a>
+                    <a class="nav-link" href="oldal2.html">Hogyan mérjük?</a>
+                    </div>
+>>>>>>> 0bcdddeffd104d24ea21abdd551920d3879f6bc8
                 </div>
-            </div>
-        </div>
-        <div class="main">
+                </div>
+            </nav>
+        </header>
+        <section>
             <div class="row">
                 <div class="text-center pt-5 pb-5 mb-5" id="cim">
                     <h1>Testösszetétel becslése</h1>
@@ -47,12 +65,12 @@
                             <div class="text-center col-md-6 p-5 mb-5 mezok" id="mezo">
                                 <fieldset class="row" id="sor1">
                                     <div class="col-6">
-                                        <label for="testmagassag" class="testreszek">Testmagasság</label><br>
-                                        <input type="number" id="magassag">
+                                        <label for="testmagassag" class="testreszek">Testmagasság (cm)</label><br>
+                                        <input type="number" id="testmagassag">
                                     </div>
                                     <div class="col-6">
-                                        <label for="testtomeg" class="testreszek">Testtömeg</label><br>
-                                        <input type="number" id="tomeg">
+                                        <label for="testtomeg" class="testreszek">Testtömeg (kg)</label><br>
+                                        <input type="number" id="testtomeg">
                                     </div>
                                     <div class="col-12">
                                         <p onclick="elso_negyzet()" class="text-center mt-2 text-danger fw-bold cursor">További információ</p>
@@ -62,15 +80,15 @@
                             <div class="text-center col-md-6 p-5 mb-5 mezok">
                                 <fieldset class="row">
                                     <div class="col-6">
-                                        <label for="konyokszelesseg" class="testreszek">Könyökszélesség</label><br>
+                                        <label for="konyokszelesseg" class="testreszek">Könyökszélesség (cm)</label><br>
                                         <input type="number" class="mb-3" id="konyokszelesseg">
-                                        <label for="terdszelesseg" class="testreszek">Térdszélesség</label><br>
+                                        <label for="terdszelesseg" class="testreszek">Térdszélesség (cm)</label><br>
                                         <input type="number" id="terdszelesseg">
                                     </div>
                                     <div class="col-6">
-                                        <label for="csuklokerulet" class="testreszek">Csuklókerület</label><br>
+                                        <label for="csuklokerulet" class="testreszek">Csuklókerület (cm)</label><br>
                                         <input type="number" class="mb-3" id="csuklokerulet">
-                                        <label for="bokakerulet" class="testreszek">Bokakerület</label><br>
+                                        <label for="bokakerulet" class="testreszek">Bokakerület (cm)</label><br>
                                         <input type="number" id="bokakerulet">
                                     </div>
                                     <div>
@@ -83,20 +101,20 @@
                             <div class="text-center col-md-6 p-5 mb-5 mezok">
                                 <fieldset class="row">
                                     <div class="col-6 mt-5">
-                                        <label for="tricepszredo" class="testreszek">Tricepszredő</label><br>
+                                        <label for="tricepszredo" class="testreszek">Tricepszredő (mm)</label><br>
                                         <input type="number" id="tricepszredo">
-                                        <label for="lapockaredo" class="testreszek">Lapockaredő</label><br>
+                                        <label for="lapockaredo" class="testreszek">Lapockaredő (mm)</label><br>
                                         <input type="number" id="lapockaredo">
                                     </div>
                                     <div class="col-6 mt-5">
-                                        <label for="combredo" class="testreszek">Combredő</label><br>
+                                        <label for="combredo" class="testreszek">Combredő (mm)</label><br>
                                         <input type="number" id="combredo">
-                                        <label for="koldokredo" class="testreszek">Köldökredő</label><br>
+                                        <label for="koldokredo" class="testreszek">Köldökredő (mm)</label><br>
                                         <input type="number" id="koldokredo">
                                     </div>
                                     <div class="row">
                                         <div class="m-3">
-                                            <label for="alszarredo" class="testreszek">Alszárredő</label><br>
+                                            <label for="alszarredo" class="testreszek">Alszárredő (mm)</label><br>
                                             <input type="number" id="alszarredo">
                                         </div>
                                     </div>
@@ -108,31 +126,31 @@
                             <div class="text-center col-md-6 p-5 mb-5 mezok">
                                 <fieldset class="row">
                                     <div class="col-6">
-                                        <label for="felkarkerulet" class="testreszek">Nyújtott felkarkerület</label><br>
+                                        <label for="felkarkerulet" class="testreszek" id="felkar">Nyújtott felkarkerület (cm)</label><br>
                                         <input type="number" id="nyujtott_felkarkerulet"><br>
-                                        <label for="mellkaskerulet" class="testreszek">Mellkaskerület</label><br>
+                                        <label for="mellkaskerulet" class="testreszek">Mellkaskerület (cm)</label><br>
                                         <input type="number" id="mellkaskerulet"><br>
                                     </div>
                                     <div class="col-6">
-                                        <label for="alkarkerulet" class="testreszek">Alkarkerület</label><br>
+                                        <label for="alkarkerulet" class="testreszek">Alkarkerület (cm)</label><br>
                                         <input type="number" id="alkarkerulet"><br>
-                                        <label for="combkerulet" class="testreszek">Combkerület</label><br>
+                                        <label for="combkerulet" class="testreszek">Combkerület (cm)</label><br>
                                         <input type="number" id="combkerulet"><br>
                                     </div>
                                     <div class="col-6">
-                                        <label for="alszarkerulet" class="testreszek">Alszárkerület</label><br>
+                                        <label for="alszarkerulet" class="testreszek">Alszárkerület (cm)</label><br>
                                         <input type="number" id="alszarkerulet"><br>
-                                        <label for="vallszelesseg" class="testreszek">Vállszélesség</label><br>
+                                        <label for="vallszelesseg" class="testreszek">Vállszélesség (cm)</label><br>
                                         <input type="number" id="vallszelesseg"><br>
                                     </div>
                                     <div class="col-6">
-                                        <label for="mellkasszelesseg" class="testreszek">Mellkasszélesség</label><br>
+                                        <label for="mellkasszelesseg" class="testreszek">Mellkasszélesség (cm)</label><br>
                                         <input type="number" id="mellkasszelesseg"><br>
-                                        <label for="csiposzelesseg" class="testreszek">Csípőszélesség</label><br>
+                                        <label for="csiposzelesseg" class="testreszek">Csípőszélesség (cm)</label><br>
                                         <input type="number" id="csiposzelesseg"><br>
                                     </div>
                                     <div class="col-12">
-                                        <label for="mellkasmelyseg" class="testreszek">Mellkasmélység</label><br>
+                                        <label for="mellkasmelyseg" class="testreszek">Mellkasmélység (cm)</label><br>
                                         <input type="number" id="mellkasmelyseg">
                                     </div>
                                     <div>
@@ -144,15 +162,15 @@
                                 <div class="col-md-12 mb-3 mezok">
                                     <div class="row">
                                         <div class="col-6 mt-3 ms-4 mb-3 eredmenyek">
-                                            <p class="szoveg">Csonttömeg: <span id="csonttomeg_eredmeny"></span></p>
-                                            <p class="szoveg">Zsírtömeg: <span id="zsirtomeg_eredmeny"></span></p> 
+                                            <p>Csonttömeg: <span id="csonttomeg_eredmeny"></span></p>
+                                            <p>Zsírtömeg: <span id="zsirtomeg_eredmeny"></span></p> 
                                         </div>
                                         <div class="col-6 mt-3 ms-4 mb-3 eredmenyek">
-                                            <p class="szoveg">Izomtömeg: <span id="izomtomeg_eredmeny"></span></p>
-                                            <p class="szoveg">Zsigertomeg: <span id="zsigertomeg_eredmeny"></span></p>
+                                            <p>Izomtömeg: <span id="izomtomeg_eredmeny"></span></p>
+                                            <p>Zsigertomeg: <span id="zsigertomeg_eredmeny"></span></p>
                                         </div>
                                         <div class="col-12 eredmenyek mb-3">
-                                            <p class="szoveg">Becsült testtömeg: <span id="becsult_testtomeg_eredmeny"></span></p> 
+                                            <p>Becsült testtömeg: <span id="becsult_testtomeg_eredmeny"></span></p> 
                                         </div>
                                         <div class="col-12 text-center mb-3"> 
                                             <input type="button" onclick="szamolas()" value="Számítás" class="btn btn-dark">
@@ -164,8 +182,8 @@
                     </form>
                 </div>
             </div>
-        </div>
-    </div>
+        </section>
+    </main>
 <script src="../Verseny/js/info.js"></script>
 <script src="../Verseny/js/szamitas.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
