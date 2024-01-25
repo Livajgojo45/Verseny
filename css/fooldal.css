@@ -8,6 +8,14 @@ header{
     width: 100%;
 }
 
+#kocka1{
+    background-color: #a02c2c;
+    border-radius: 25px;
+    box-shadow: 7px 7px 3px #ffccaa;
+    
+}
+
+
 p{
     text-align: justify;
 }
